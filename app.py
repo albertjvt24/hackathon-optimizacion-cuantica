@@ -12,7 +12,6 @@ st.set_page_config(page_title="Max-Cut Híbrido", layout="wide")
 st.title("Optimización de Antenas: Clásico vs Cuántico")
 
 def dibujar_grafo(red, asignacion, titulo, ax):
-    """Renderiza la topología mostrando interferencias en rojo."""
     G = nx.Graph()
     for i in range(red['n']):
         G.add_node(i, pos=red['pos'][i])
