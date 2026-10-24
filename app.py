@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
-from generator.py import generar_red_demo
-from classical_solver.py import comparar, componentes 
-from quantum_solver.py import resolver_qaoa  # 
+from src.generator import generar_red_demo
+from src.classical_solver import comparar, componentes 
+from src.quantum_solver import resolver_qaoa  # 
 
 st.set_page_config(page_title="Max-Cut Híbrido", layout="wide")
 st.title("Optimización de Antenas: Clásico vs Cuántico")
